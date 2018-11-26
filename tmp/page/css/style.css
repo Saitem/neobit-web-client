@@ -1,0 +1,139 @@
+@font-face {
+  font-family: "Segoe UI Regular";
+  src: url("SegoeUI.eot");
+  src: url("SegoeUI.eot?#iefix") format("embedded-opentype"), url("SegoeUI.woff") format("woff"), url("SegoeUI.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  height: 100vh;
+  background-color: #f0f4f5;
+}
+
+header {
+  padding: 10px 0px 10px 0px;
+  background-color: #3b404a;
+}
+header img {
+  padding: auto;
+  height: 100px;
+  width: auto;
+}
+header .col-xl-3 {
+  display: inline;
+}
+header .links_header {
+  text-align: right;
+  display: inline-block;
+}
+header .links_header a, header .links_header span {
+  font-weight: 100;
+  margin-left: 20px;
+  font-size: 17pt;
+  color: white;
+}
+header .links_header a:hover {
+  color: #2ac467;
+  text-decoration: none;
+}
+
+nav {
+  text-align: center;
+  padding: 10px 0px 10px 0px;
+  background-color: white;
+  box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.6);
+}
+nav div {
+  display: inline-block;
+}
+nav div p {
+  display: inline-block;
+}
+nav a {
+  margin-right: 50px;
+  color: #9c9c9c;
+  font-size: 20pt;
+}
+nav a:hover {
+  color: #2ac467;
+  text-decoration: none;
+}
+
+main {
+  height: 5vh;
+}
+
+.paddings {
+  padding: 0px;
+}
+
+footer .div_top_footer {
+  background-color: #373d44;
+}
+footer .table_footer {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin: auto;
+  padding: 40px 0px 40px 0px;
+}
+footer .table_footer ul {
+  text-align: left;
+  display: inline-block;
+  list-style: none;
+}
+footer .table_footer ul li span {
+  color: white;
+  font-weight: 700;
+  font-size: 17pt;
+}
+footer .table_footer ul li a {
+  color: white;
+  font-weight: 200;
+  font-size: 15pt;
+}
+footer .table_footer ul li a:hover {
+  color: #2ac467;
+  text-decoration: none;
+}
+
+.bottom_footer {
+  background-color: #3b404a;
+  padding: 10px 0px 20px 0px;
+}
+.bottom_footer div {
+  padding: 0px;
+  display: inline-block;
+}
+.bottom_footer div .logo_footer {
+  height: 70px;
+  width: auto;
+}
+.bottom_footer div span {
+  color: white;
+}
+.bottom_footer .social_footer {
+  padding: 0px;
+  display: inline-block;
+  text-align: right;
+}
+.bottom_footer .social_footer ul {
+  word-spacing: 10px;
+  list-style: none;
+}
+.bottom_footer .social_footer ul li {
+  display: inline;
+}
+.bottom_footer .social_footer ul li i {
+  margin: 0px 10px 0px 0px;
+  color: white;
+  font-size: 32px;
+}
+.bottom_footer .social_footer ul li i:hover {
+  color: #2ac467;
+}
+
+a {
+  font-family: "Segoe UI Regular";
+}
+
+/*# sourceMappingURL=style.css.map */

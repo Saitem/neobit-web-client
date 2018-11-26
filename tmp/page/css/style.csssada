@@ -1,0 +1,26 @@
+header {
+  padding: 10px 0px 10px 0px;
+  background-color: #3b404a;
+}
+header img {
+  height: 80px;
+  width: auto;
+}
+header a {
+  color: white;
+  font-size: 17pt;
+}
+header a img {
+  color: white;
+  height: 35px;
+}
+
+.links_header {
+  display: inline-block;
+}
+.links_header a {
+  margin-left: 20px;
+  color: white;
+}
+
+/*# sourceMappingURL=style.csssada.map */
