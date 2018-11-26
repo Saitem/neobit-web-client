@@ -1,0 +1,57 @@
+body {
+  padding: 50px;
+  background-color: #f0f4f5;
+}
+
+.article-card {
+  height: 345.5px;
+  overflow: hidden;
+  border: none;
+  border-radius: 0;
+  box-shadow: 0 0 10px #00000057;
+}
+
+.article-card-img-top {
+  width: 320px;
+  height: 180px;
+}
+
+.article-card-body {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.article-card-img-top {
+  border-radius: 0;
+}
+
+.article-card-text {
+  height: 86.4px;
+  overflow: hidden;
+  display: block;
+}
+
+.article-card-footer {
+  border-top: 0;
+  font-size: 0.97rem;
+  padding: 0.55rem, 1.15rem,
+}
+
+.footer-icon-calendar {
+  text-align: left;
+}
+
+.footer-icon-views {
+  text-align: right
+}
+
+.article-card-link {
+  display: inline;
+  font-size: 1.20rem;
+  color: #000000
+}
+
+.article-card-link:hover {
+  color: #2AC467;
+}
+
