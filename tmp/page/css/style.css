@@ -1,3 +1,23 @@
+@media (min-width: 575.98px) and (max-width: 991.98px) {
+  .links_header {
+    text-align: center !important;
+  }
+}
+@media (min-width: 991.99px) {
+  .links_header {
+    text-align: right !important;
+  }
+}
+@media (max-width: 991px) {
+  nav div {
+    text-align: center !important;
+  }
+}
+@media (max-width: 991.98px) {
+  .social_footer {
+    text-align: center !important;
+  }
+}
 @font-face {
   font-family: "Segoe UI Regular";
   src: url("SegoeUI.eot");
@@ -14,22 +34,18 @@ header {
   padding: 10px 0px 10px 0px;
   background-color: #3b404a;
 }
-header img {
-  padding: auto;
-  height: 100px;
-  width: auto;
-}
-header .col-xl-3 {
-  display: inline;
+header div img {
+  padding-left: 0px;
+  padding-right: 0px;
+  transform: scale(0.9, 0.9);
 }
 header .links_header {
-  text-align: right;
   display: inline-block;
 }
 header .links_header a, header .links_header span {
   font-weight: 100;
   margin-left: 20px;
-  font-size: 17pt;
+  font-size: 14pt;
   color: white;
 }
 header .links_header a:hover {
@@ -52,11 +68,11 @@ nav div p {
 nav a {
   margin-right: 50px;
   color: #9c9c9c;
-  font-size: 20pt;
+  font-size: 17pt;
 }
 nav a:hover {
   color: #2ac467;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 main {
@@ -71,17 +87,18 @@ footer .div_top_footer {
   background-color: #373d44;
 }
 footer .table_footer {
+  text-align: center;
   margin-left: 0px;
   margin-right: 0px;
   margin: auto;
   padding: 40px 0px 40px 0px;
 }
 footer .table_footer ul {
-  text-align: left;
+  padding: 0px 2% 0px 2%;
   display: inline-block;
   list-style: none;
 }
-footer .table_footer ul li span {
+footer .table_footer ul lh {
   color: white;
   font-weight: 700;
   font-size: 17pt;
@@ -89,7 +106,7 @@ footer .table_footer ul li span {
 footer .table_footer ul li a {
   color: white;
   font-weight: 200;
-  font-size: 15pt;
+  font-size: 12pt;
 }
 footer .table_footer ul li a:hover {
   color: #2ac467;
@@ -104,7 +121,11 @@ footer .table_footer ul li a:hover {
   padding: 0px;
   display: inline-block;
 }
-.bottom_footer div .logo_footer {
+.bottom_footer div p {
+  margin-bottom: 0px;
+}
+.bottom_footer div p .logo_footer {
+  margin-top: auto;
   height: 70px;
   width: auto;
 }
@@ -115,6 +136,7 @@ footer .table_footer ul li a:hover {
   padding: 0px;
   display: inline-block;
   text-align: right;
+  margin-top: auto;
 }
 .bottom_footer .social_footer ul {
   word-spacing: 10px;
@@ -126,7 +148,31 @@ footer .table_footer ul li a:hover {
 .bottom_footer .social_footer ul li i {
   margin: 0px 10px 0px 0px;
   color: white;
-  font-size: 32px;
+  font-size: 29px;
+}
+.bottom_footer .social_footer ul li .logos {
+  -ms-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  -webkit-transition: all 0.6s ease;
+}
+.bottom_footer .social_footer ul li .telegram:hover {
+  color: #41b4e6;
+}
+.bottom_footer .social_footer ul li .facebook:hover {
+  color: #475993;
+}
+.bottom_footer .social_footer ul li .youtube:hover {
+  color: #f61c0d;
+}
+.bottom_footer .social_footer ul li .vk:hover {
+  color: #4d76a1;
+}
+.bottom_footer .social_footer ul li .twitter:hover {
+  color: #55acee;
+}
+.bottom_footer .social_footer ul li .github:hover {
+  color: #800080;
 }
 .bottom_footer .social_footer ul li i:hover {
   color: #2ac467;
