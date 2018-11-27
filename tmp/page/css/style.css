@@ -17,6 +17,10 @@
   .social_footer {
     text-align: center !important;
   }
+
+  .logo_footer_div {
+    text-align: center !important;
+  }
 }
 @font-face {
   font-family: "Segoe UI Regular";
@@ -120,6 +124,7 @@ footer .table_footer ul li a:hover {
 .bottom_footer div {
   padding: 0px;
   display: inline-block;
+  text-align: right;
 }
 .bottom_footer div p {
   margin-bottom: 0px;

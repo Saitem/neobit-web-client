@@ -23,6 +23,9 @@
   .social_footer{
     text-align: center !important
   }
+  .logo_footer_div{
+    text-align: center !important
+  }
 }
 
 $header_footer_back: #3b404a;
@@ -135,6 +138,7 @@ footer{
   div{
     padding: 0px;
     display: inline-block;
+    text-align: right;
     p{
       margin-bottom: 0px;
       .logo_footer{
