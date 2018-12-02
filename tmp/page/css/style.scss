@@ -5,6 +5,7 @@
   .links_header{
       text-align: center !important
   }
+  
 }
 @media (min-width: 991.99px){
   .links_header{
@@ -27,6 +28,21 @@
     text-align: center !important
   }
 }
+//  не робит
+/*@media screen and (max-width: 768px){
+  .table_footer{
+    ul{
+      lh{
+        font-size: 20pt
+      }
+      li{
+       a{
+      font-size: 15pt
+        }
+      }
+    }
+  }
+}*/
 
 $header_footer_back: #3b404a;
 $top_footer_back: #373d44;
@@ -133,8 +149,10 @@ footer{
   }
 }
 .bottom_footer {
+  width: 100%;
   background-color: $header_footer_back;
   padding: 10px 0px 20px 0px;
+  margin: 0px;
   div{
     padding: 0px;
     display: inline-block;

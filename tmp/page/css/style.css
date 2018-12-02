@@ -22,6 +22,20 @@
     text-align: center !important;
   }
 }
+/*@media screen and (max-width: 768px){
+  .table_footer{
+    ul{
+      lh{
+        font-size: 20pt
+      }
+      li{
+       a{
+      font-size: 15pt
+        }
+      }
+    }
+  }
+}*/
 @font-face {
   font-family: "Segoe UI Regular";
   src: url("SegoeUI.eot");
@@ -118,8 +132,10 @@ footer .table_footer ul li a:hover {
 }
 
 .bottom_footer {
+  width: 100%;
   background-color: #3b404a;
   padding: 10px 0px 20px 0px;
+  margin: 0px;
 }
 .bottom_footer div {
   padding: 0px;
