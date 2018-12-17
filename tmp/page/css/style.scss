@@ -1,8 +1,9 @@
 @import "fonts.scss";
 
-// $header_footer_back: #313235;
-// $top_footer_back: rgb(95, 95, 95);
+$header_footer_back: #313235;
+$top_footer_back: rgb(95, 95, 95);
 
+//optimization
 @media (min-width: 575.98px) and (max-width: 991.98px){
   .links_header{
       text-align: center !important
@@ -24,27 +25,56 @@
 
 @media(max-width: 991.98px){
   .social_footer{
-    text-align: center !important
+    text-align: center !important;
   }
   .logo_footer_div{
-    text-align: center !important
+    text-align: center !important;
   }
-}
-//  не робит
-/*@media screen and (max-width: 768px){
   .table_footer{
     ul{
+    text-align: center !important;
+    }
+  }
+}
+//  ДЛЯ телефонов
+
+@media (min-width: 200px) and (max-width: 980px){
+  .links_header{
+    a, span{
+      font-size: 26pt !important;
+    }
+  }
+  nav{
+      a{
+        font-size: 20pt !important; //or 18.5
+    }
+  }
+  .table_footer{  
       lh{
-        font-size: 20pt
+        font-size: 25pt !important;
       }
+    li{
+      a{
+        font-size: 20pt !important; 
+      }
+    }
+    }
+  .all_rul_suc{
+    font-size: 19pt !important;
+  }
+  .social_footer{
+    ul{
       li{
-       a{
-      font-size: 15pt
+        a{
+          i{
+            font-size: 45px !important;
+          }
         }
       }
     }
   }
-}*/
+  
+}
 
 body, html {
   margin: 0;
@@ -73,7 +103,7 @@ body {
   background-color: #f0f4f5;
 }
 
-
+//Header
 header {
   padding: 10px 0px 10px 0px;
   background-color: $header_footer_back;
@@ -99,6 +129,7 @@ header {
   }
 }
 
+//navbar
 nav {
   text-align: center;
   padding: 10px 0px 10px 0px;
@@ -135,6 +166,8 @@ main {
 .paddings{
   padding: 0px;
 }
+
+//footer
 footer{
   .div_top_footer{
   background-color: $top_footer_back;
@@ -152,8 +185,8 @@ footer{
     list-style: none;
     lh{
     color: white;
-      font-weight: 700;
-      font-size: 17pt;  
+    font-weight: 700;
+    font-size: 17pt;  
     }
     li{
     a{
@@ -169,6 +202,8 @@ footer{
   }
   }
 }
+
+//bottom_footer
 .bottom_footer {
   width: 100%;
   background-color: $header_footer_back;
@@ -178,16 +213,14 @@ footer{
     padding: 0px;
     display: inline-block;
     text-align: right;
-    p{
-      margin-bottom: 0px;
       .logo_footer{
         margin-top: auto;
         height: 70px;
         width: auto;
         }
-    }
     span{
     color: white;
+    font-size: 12pt;
     }
   }
   .social_footer {
