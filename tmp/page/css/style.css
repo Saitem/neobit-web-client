@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab|Russo+One|Ubuntu|Varela+Round");
 @media (min-width: 575.98px) and (max-width: 991.98px) {
   .links_header {
     text-align: center !important;
@@ -21,28 +22,49 @@
   .logo_footer_div {
     text-align: center !important;
   }
-}
-/*@media screen and (max-width: 768px){
-  .table_footer{
-    ul{
-      lh{
-        font-size: 20pt
-      }
-      li{
-       a{
-      font-size: 15pt
-        }
-      }
-    }
+
+  .table_footer ul {
+    text-align: center !important;
   }
-}*/
-@font-face {
-  font-family: "Segoe UI Regular";
-  src: url("SegoeUI.eot");
-  src: url("SegoeUI.eot?#iefix") format("embedded-opentype"), url("SegoeUI.woff") format("woff"), url("SegoeUI.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
 }
+@media (min-width: 200px) and (max-width: 980px) {
+  .links_header a, .links_header span {
+    font-size: 26pt !important;
+  }
+
+  nav a {
+    font-size: 20pt !important;
+  }
+
+  .table_footer lh {
+    text-align: center !important;
+    font-size: 25pt !important;
+  }
+  .table_footer li {
+    text-align: center !important;
+  }
+  .table_footer li a {
+    font-size: 20pt !important;
+  }
+
+  .all_rul_suc {
+    font-size: 19pt !important;
+  }
+
+  .social_footer ul li a i {
+    font-size: 45px !important;
+  }
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 body {
   height: 100vh;
   background-color: #f0f4f5;
@@ -80,7 +102,13 @@ nav {
   text-align: center;
   padding: 10px 0px 10px 0px;
   background-color: white;
-  box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 6px 20px -4px #868686;
+}
+nav .nav_sites {
+  text-align: center;
+}
+nav .side-navbar {
+  text-align: center;
 }
 nav div {
   display: inline-block;
@@ -89,17 +117,22 @@ nav div p {
   display: inline-block;
 }
 nav a {
+  display: inline-block;
+  height: 100%;
   margin-right: 50px;
   color: #9c9c9c;
-  font-size: 17pt;
+  font-size: 14.5pt;
 }
 nav a:hover {
   color: #2ac467;
-  text-decoration: underline;
+}
+nav .side-navbar a {
+  display: inline-block;
+  width: max-content;
 }
 
 main {
-  height: 5vh;
+  height: 32vh;
 }
 
 .paddings {
@@ -114,9 +147,10 @@ footer .table_footer {
   margin-left: 0px;
   margin-right: 0px;
   margin: auto;
-  padding: 40px 0px 40px 0px;
+  padding: 75px 0px 75px 0px;
 }
 footer .table_footer ul {
+  text-align: left;
   padding: 0px 2% 0px 2%;
   display: inline-block;
   list-style: none;
@@ -144,7 +178,7 @@ footer .table_footer ul a:hover {
 .bottom_footer {
   width: 100%;
   background-color: #3b404a;
-  padding: 10px 0px 20px 0px;
+  padding: 5px 0px 10px 0px;
   margin: 0px;
 }
 .bottom_footer div {
@@ -152,10 +186,7 @@ footer .table_footer ul a:hover {
   display: inline-block;
   text-align: right;
 }
-.bottom_footer div p {
-  margin-bottom: 0px;
-}
-.bottom_footer div p .logo_footer {
+.bottom_footer div .logo_footer {
   margin-top: auto;
   height: 60px;
   width: auto;
@@ -163,6 +194,7 @@ footer .table_footer ul a:hover {
 .bottom_footer div span {
   margin-top: 90px;
   color: white;
+  font-size: 12pt;
 }
 .bottom_footer .social_footer {
   padding: 0px;
@@ -211,7 +243,7 @@ footer .table_footer ul a:hover {
 }
 
 a {
-  font-family: "Segoe UI Regular";
+  font-family: "Arial";
 }
 
 /*# sourceMappingURL=style.css.map */

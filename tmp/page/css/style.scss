@@ -1,6 +1,9 @@
-// $header_footer_back: #313235;
-// $top_footer_back: rgb(95, 95, 95);
+@import "fonts.scss";
 
+$header_footer_back: #313235;
+$top_footer_back: rgb(95, 95, 95);
+
+//optimization
 @media (min-width: 575.98px) and (max-width: 991.98px){
   .links_header{
       text-align: center !important
@@ -22,45 +25,87 @@
 
 @media(max-width: 991.98px){
   .social_footer{
-    text-align: center !important
+    text-align: center !important;
   }
   .logo_footer_div{
-    text-align: center !important
+    text-align: center !important;
   }
-}
-//  не робит
-/*@media screen and (max-width: 768px){
   .table_footer{
     ul{
+    text-align: center !important;
+    }
+  }
+}
+//  ДЛЯ телефонов
+
+@media (min-width: 200px) and (max-width: 980px){
+  .links_header{
+    a, span{
+      font-size: 26pt !important;
+    }
+  }
+  nav{
+      a{
+        font-size: 20pt !important; //or 18.5
+    }
+  }
+  .table_footer{  
       lh{
-        font-size: 20pt
+        text-align: center !important;
+        font-size: 25pt !important;
       }
+    li{
+      text-align: center !important;
+      a{
+        font-size: 20pt !important; 
+      }
+    }
+    }
+  .all_rul_suc{
+    font-size: 19pt !important;
+  }
+  .social_footer{
+    ul{
       li{
-       a{
-      font-size: 15pt
+        a{
+          i{
+            font-size: 45px !important;
+          }
         }
       }
     }
   }
-}*/
+  
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+a:hover {
+  text-decoration: none;
+}
 
 $header_footer_back: #3b404a;
 $top_footer_back: #373d44;
-@font-face {
-  font-family: 'Segoe UI Regular';
-  src: url('SegoeUI.eot');
-  src: url('SegoeUI.eot?#iefix') format('embedded-opentype'),
-  url('SegoeUI.woff') format('woff'),
-  url('SegoeUI.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
+// @font-face {
+//   font-family: 'Segoe UI Regular';
+//   src: url('SegoeUI.eot');
+//   src: url('SegoeUI.eot?#iefix') format('embedded-opentype'),
+//   url('SegoeUI.woff') format('woff'),
+//   url('SegoeUI.ttf') format('truetype');
+//   font-weight: normal;
+//   font-style: normal;
+// }
 
 body {
   height: 100vh;
   background-color: #f0f4f5;
 }
 
+//Header
 header {
   padding: 10px 0px 10px 0px;
   background-color: $header_footer_back;
@@ -89,34 +134,51 @@ header {
   }
 }
 
+//navbar
 nav {
   text-align: center;
   padding: 10px 0px 10px 0px;
   background-color: white;
-  box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 6px 20px -4px #868686;
+  .nav_sites{
+    text-align: center;
+  }
+  .side-navbar{
+    text-align: center;
+  }
   div {
-  display: inline-block;
+    display: inline-block;
   p {
     display: inline-block;
   }
   }
   a {
+  display: inline-block;
+  height: 100%;
   margin-right: 50px;
   color: #9c9c9c;
-  font-size: 17pt;
+  font-size: 14.5pt;
   }
   a:hover {
   color: #2ac467;
-  text-decoration: underline;
+  }
+
+  .side-navbar {
+    a {
+      display: inline-block;
+      width: max-content
+    }
   }
 }
 
 main {
-  height: 5vh;
+  height: 32vh;
 }
 .paddings{
   padding: 0px;
 }
+
+//footer
 footer{
   .div_top_footer{
   background-color: $top_footer_back;
@@ -126,8 +188,9 @@ footer{
   margin-left: 0px;
   margin-right: 0px;
   margin: auto;
-  padding: 40px 0px 40px 0px;
+  padding: 75px 0px 75px 0px;
   ul{
+    text-align: left;
     padding: 0px 2% 0px 2%;
     display: inline-block;
     list-style: none;
@@ -153,26 +216,26 @@ footer{
     }
   }
 }
+
+//bottom_footer
 .bottom_footer {
   width: 100%;
   background-color: $header_footer_back;
-  padding: 10px 0px 20px 0px;
+  padding: 5px 0px 10px 0px;
   margin: 0px;
   div{
     padding: 0px;
     display: inline-block;
     text-align: right;
-    p{
-      margin-bottom: 0px;
       .logo_footer{
         margin-top: auto;
         height: 60px;
         width: auto;
         }
-    }
     span{
     margin-top: 90px; 
     color: white;
+    font-size: 12pt;
     }
   }
   .social_footer {
@@ -221,6 +284,6 @@ footer{
     }
   }
 }
-a{
-  font-family: 'Segoe UI Regular';
+a {
+  font-family: 'Arial';
 }
