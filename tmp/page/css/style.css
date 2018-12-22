@@ -29,16 +29,16 @@
 }
 @media (min-width: 200px) and (max-width: 980px) {
   .links_header a, .links_header span {
-    font-size: 26pt !important;
+    font-size: 22pt !important;
   }
 
   nav a {
-    font-size: 20pt !important;
+    font-size: 17pt !important;
   }
 
   .table_footer lh {
     text-align: center !important;
-    font-size: 25pt !important;
+    font-size: 23pt !important;
   }
   .table_footer li {
     text-align: center !important;
@@ -58,7 +58,6 @@
 body, html {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
 }
 
 a:hover {
@@ -88,7 +87,7 @@ header .links_header {
   display: inline-block;
 }
 header .links_header a, header .links_header span {
-  font-weight: 100;
+  font-weight: 400;
   margin-left: 20px;
   font-size: 14pt;
   color: white;
@@ -108,7 +107,7 @@ nav .nav_sites {
   text-align: center;
 }
 nav .side-navbar {
-  text-align: center;
+  text-align: right;
 }
 nav div {
   display: inline-block;
@@ -121,6 +120,7 @@ nav a {
   height: 100%;
   margin-right: 50px;
   color: #9c9c9c;
+  font-weight: 600;
   font-size: 14.5pt;
 }
 nav a:hover {
@@ -168,7 +168,7 @@ footer .table_footer ul li {
 footer .table_footer ul a {
   color: white;
   font-weight: 200;
-  font-size: 12pt;
+  font-size: 15pt;
 }
 footer .table_footer ul a:hover {
   color: #2ac467;
@@ -240,10 +240,6 @@ footer .table_footer ul a:hover {
 }
 .bottom_footer .social_footer ul li i:hover {
   color: #2ac467;
-}
-
-a {
-  font-family: "Arial";
 }
 
 /*# sourceMappingURL=style.css.map */
