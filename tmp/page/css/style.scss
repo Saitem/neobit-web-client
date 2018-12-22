@@ -51,9 +51,11 @@ $top_footer_back: rgb(95, 95, 95);
   }
   .table_footer{  
       lh{
+        text-align: center !important;
         font-size: 25pt !important;
       }
     li{
+      text-align: center !important;
       a{
         font-size: 20pt !important; 
       }
@@ -184,11 +186,14 @@ footer{
     display: inline-block;
     list-style: none;
     lh{
-    color: white;
-    font-weight: 700;
-    font-size: 17pt;  
+      display: block;
+      text-align: left;
+      color: white;
+      font-weight: 700;
+      font-size: 17pt;  
     }
     li{
+      text-align: left;
     a{
       color: white;
       font-weight: 200;

@@ -37,7 +37,11 @@
   }
 
   .table_footer lh {
+    text-align: center !important;
     font-size: 25pt !important;
+  }
+  .table_footer li {
+    text-align: center !important;
   }
   .table_footer li a {
     font-size: 20pt !important;
@@ -141,9 +145,14 @@ footer .table_footer ul {
   list-style: none;
 }
 footer .table_footer ul lh {
+  display: block;
+  text-align: left;
   color: white;
   font-weight: 700;
   font-size: 17pt;
+}
+footer .table_footer ul li {
+  text-align: left;
 }
 footer .table_footer ul li a {
   color: white;
