@@ -52,7 +52,12 @@ header {
   padding: 10px 0px 10px 0px;
   background-color: #3b404a;
 }
+header div {
+  text-align: center;
+}
 header div img {
+  height: 90px;
+  width: auto !important;
   padding-left: 0px;
   padding-right: 0px;
   transform: scale(0.9, 0.9);
@@ -120,13 +125,18 @@ footer .table_footer ul lh {
   color: white;
   font-weight: 700;
   font-size: 17pt;
+  text-align: left;
+  display: block;
 }
-footer .table_footer ul li a {
+footer .table_footer ul li {
+  text-align: left;
+}
+footer .table_footer ul a {
   color: white;
   font-weight: 200;
   font-size: 12pt;
 }
-footer .table_footer ul li a:hover {
+footer .table_footer ul a:hover {
   color: #2ac467;
   text-decoration: none;
 }
@@ -147,10 +157,11 @@ footer .table_footer ul li a:hover {
 }
 .bottom_footer div p .logo_footer {
   margin-top: auto;
-  height: 70px;
+  height: 60px;
   width: auto;
 }
 .bottom_footer div span {
+  margin-top: 90px;
   color: white;
 }
 .bottom_footer .social_footer {

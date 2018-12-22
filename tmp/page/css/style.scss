@@ -61,12 +61,14 @@ body {
   background-color: #f0f4f5;
 }
 
-
 header {
   padding: 10px 0px 10px 0px;
   background-color: $header_footer_back;
   div{
+    text-align: center;
   img {
+    height: 90px;
+    width: auto !important; 
     padding-left: 0px;
     padding-right: 0px;
     transform: scale(0.9,0.9)
@@ -130,11 +132,15 @@ footer{
     display: inline-block;
     list-style: none;
     lh{
-    color: white;
+      color: white;
       font-weight: 700;
       font-size: 17pt;  
+      text-align: left;
+      display: block;
     }
     li{
+      text-align: left;
+    }
     a{
       color: white;
       font-weight: 200;
@@ -145,7 +151,6 @@ footer{
       text-decoration: none;
     }
     }
-  }
   }
 }
 .bottom_footer {
@@ -161,11 +166,12 @@ footer{
       margin-bottom: 0px;
       .logo_footer{
         margin-top: auto;
-        height: 70px;
+        height: 60px;
         width: auto;
         }
     }
     span{
+    margin-top: 90px; 
     color: white;
     }
   }
