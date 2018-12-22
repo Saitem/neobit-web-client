@@ -74,6 +74,9 @@ header {
   padding: 10px 0px 10px 0px;
   background-color: #3b404a;
 }
+header div {
+  text-align: center;
+}
 header div img {
   padding-left: 0px;
   padding-right: 0px;
@@ -98,6 +101,12 @@ nav {
   padding: 10px 0px 10px 0px;
   background-color: white;
   box-shadow: 0 6px 20px -4px #868686;
+}
+nav .nav_sites {
+  text-align: center;
+}
+nav .side-navbar {
+  text-align: center;
 }
 nav div {
   display: inline-block;
