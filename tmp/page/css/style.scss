@@ -107,11 +107,16 @@ body {
 
 //Header
 header {
+  margin: auto;
   padding: 10px 0px 10px 0px;
   background-color: $header_footer_back;
-  div{
-    text-align: center;
-  img {
+  .header_container{
+    margin: auto !important;
+  }
+  .img_div{
+    display: inline-block;
+    padding: 0px;
+  .logo_header{
     height: 90px;
     width: auto !important; 
     padding-left: 0px;
@@ -135,13 +140,25 @@ header {
 }
 
 //navbar
-nav {
+nav{
+  margin: auto;
   text-align: center;
   padding: 10px 0px 10px 0px;
   background-color: white;
   box-shadow: 0 6px 20px -4px #868686;
+  .div_nav{
+    margin: auto;
+  }
   .nav_sites{
-    text-align: center;
+    text-align: left;
+    a{
+    display: inline-block;
+    height: 100%;
+    color: #9c9c9c;
+    font-weight: 600;
+    font-size: 14.5pt;
+    margin-right: 50px;
+    }
   }
   .side-navbar{
     text-align: right;
@@ -155,7 +172,6 @@ nav {
   a {
   display: inline-block;
   height: 100%;
-  margin-right: 50px;
   color: #9c9c9c;
   font-weight: 600;
   font-size: 14.5pt;
@@ -172,17 +188,113 @@ nav {
   }
 }
 
+//main
 main {
-  height: 32vh;
+  margin-top: 25px; 
 }
-.paddings{
+//info-cards
+.cards{
+  margin: auto;
+}
+.card{
+  .fa-calendar-alt{
+    margin-right: 7px;
+  }
+}
+.card{
+  box-shadow: 0 0 10px #00000057;
+  display: inline-block;
+  padding: 0px;
+  margin: 15px;
+  border: 0px;
+  width: 20rem;
+}
+.card-title{
+  background-color: white;
+  padding: 16px 20px 16px 20px;
+  a{
+    color: #212529;
+    font-size: 19px;
+  }
+  a:hover{
+    color: #2AC467;
+    text-decoration: underline;
+  }
+}
+.card-footer{
+  text-align: center;
+  margin: auto;
+  padding-left: 0px;
+  padding-right: 0px;
+  background-color: rgba(0,0,0,.03);
+  color: #6c757d;
+  span{
+    padding-left: 0px;
+  padding-right: 0px;
+    margin: 0px;
+  }
+}
+.card-img{
+  width: 100%;
+  border-radius: 0px;
+}
+.card-data{
+  text-align: left;
+}
+.card-wievers{
+  text-align: right;
+}
+//right-new-cards
+.right_cards{
+  display: block;
+  height: 100%;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0 0 10px #00000057;
   padding: 0px;
 }
+.title{
+  border-radius: 10px 10px 0px 0px;
+  padding: 11px 0px 11px 0px;
+  background-color: $header_footer_back;
+  text-align: center;
+  .right_card_title{
+    font-size: 19px;
+    color: white;
+    .fa-clock{
+      color: #2AC467;
+      font-size: 17px;
+      margin-right: 2px; 
+    }
+  }
+}
+.description:last-child{
+  border-radius: 0px 0px 10px 10px;
+}
+.description{
+  margin: 0px;
+  padding: 5px 0px 5px 0px;
+  background-color: white;
+  .desc_name{
+    font-size: 17px;
+  }
+  .desc_other_name{
+    color: grey;
+    font-size: 15px;
+  }
+}
+h1, h2{
+  margin: 0px;
+}
+
 
 //footer
 footer{
+  padding: 0px;
   .div_top_footer{
   background-color: $top_footer_back;
+  }
+  .table_footer:first-child{
+    padding-left: 0px !important; 
   }
   .table_footer{
   text-align: center;
@@ -192,7 +304,6 @@ footer{
   padding: 75px 0px 75px 0px;
   ul{
     text-align: left;
-    padding: 0px 2% 0px 2%;
     display: inline-block;
     list-style: none;
     lh{
@@ -223,22 +334,26 @@ footer{
   width: 100%;
   background-color: $header_footer_back;
   padding: 5px 0px 10px 0px;
-  margin: 0px;
+  margin: auto;
+  .logo_footer_div{
+    text-align: left;
   div{
     padding: 0px;
     display: inline-block;
-    text-align: right;
-      .logo_footer{
-        margin-top: auto;
-        height: 60px;
-        width: auto;
-        }
+    text-align: center;
+    .logo_footer{
+      margin-top: auto;
+      height: 60px;
+      width: auto;
+      }
     span{
     margin-top: 90px; 
     color: white;
     font-size: 12pt;
     }
+    }
   }
+
   .social_footer {
     padding: 0px;
     display: inline-block;

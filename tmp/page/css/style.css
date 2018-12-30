@@ -70,13 +70,18 @@ body {
 }
 
 header {
+  margin: auto;
   padding: 10px 0px 10px 0px;
   background-color: #3b404a;
 }
-header div {
-  text-align: center;
+header .header_container {
+  margin: auto !important;
 }
-header div img {
+header .img_div {
+  display: inline-block;
+  padding: 0px;
+}
+header .img_div .logo_header {
   height: 90px;
   width: auto !important;
   padding-left: 0px;
@@ -98,13 +103,25 @@ header .links_header a:hover {
 }
 
 nav {
+  margin: auto;
   text-align: center;
   padding: 10px 0px 10px 0px;
   background-color: white;
   box-shadow: 0 6px 20px -4px #868686;
 }
+nav .div_nav {
+  margin: auto;
+}
 nav .nav_sites {
-  text-align: center;
+  text-align: left;
+}
+nav .nav_sites a {
+  display: inline-block;
+  height: 100%;
+  color: #9c9c9c;
+  font-weight: 600;
+  font-size: 14.5pt;
+  margin-right: 50px;
 }
 nav .side-navbar {
   text-align: right;
@@ -118,7 +135,6 @@ nav div p {
 nav a {
   display: inline-block;
   height: 100%;
-  margin-right: 50px;
   color: #9c9c9c;
   font-weight: 600;
   font-size: 14.5pt;
@@ -132,15 +148,119 @@ nav .side-navbar a {
 }
 
 main {
-  height: 32vh;
+  margin-top: 25px;
 }
 
-.paddings {
+.cards {
+  margin: auto;
+}
+
+.card .fa-calendar-alt {
+  margin-right: 7px;
+}
+
+.card {
+  box-shadow: 0 0 10px #00000057;
+  display: inline-block;
+  padding: 0px;
+  margin: 15px;
+  border: 0px;
+  width: 20rem;
+}
+
+.card-title {
+  background-color: white;
+  padding: 16px 20px 16px 20px;
+}
+.card-title a {
+  color: #212529;
+  font-size: 19px;
+}
+.card-title a:hover {
+  color: #2AC467;
+  text-decoration: underline;
+}
+
+.card-footer {
+  text-align: center;
+  margin: auto;
+  padding-left: 0px;
+  padding-right: 0px;
+  background-color: rgba(0, 0, 0, 0.03);
+  color: #6c757d;
+}
+.card-footer span {
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px;
+}
+
+.card-img {
+  width: 100%;
+  border-radius: 0px;
+}
+
+.card-data {
+  text-align: left;
+}
+
+.card-wievers {
+  text-align: right;
+}
+
+.right_cards {
+  display: block;
+  height: 100%;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0 0 10px #00000057;
   padding: 0px;
 }
 
+.title {
+  border-radius: 10px 10px 0px 0px;
+  padding: 11px 0px 11px 0px;
+  background-color: #3b404a;
+  text-align: center;
+}
+.title .right_card_title {
+  font-size: 19px;
+  color: white;
+}
+.title .right_card_title .fa-clock {
+  color: #2AC467;
+  font-size: 17px;
+  margin-right: 2px;
+}
+
+.description:last-child {
+  border-radius: 0px 0px 10px 10px;
+}
+
+.description {
+  margin: 0px;
+  padding: 5px 0px 5px 0px;
+  background-color: white;
+}
+.description .desc_name {
+  font-size: 17px;
+}
+.description .desc_other_name {
+  color: grey;
+  font-size: 15px;
+}
+
+h1, h2 {
+  margin: 0px;
+}
+
+footer {
+  padding: 0px;
+}
 footer .div_top_footer {
   background-color: #373d44;
+}
+footer .table_footer:first-child {
+  padding-left: 0px !important;
 }
 footer .table_footer {
   text-align: center;
@@ -151,7 +271,6 @@ footer .table_footer {
 }
 footer .table_footer ul {
   text-align: left;
-  padding: 0px 2% 0px 2%;
   display: inline-block;
   list-style: none;
 }
@@ -179,19 +298,22 @@ footer .table_footer ul a:hover {
   width: 100%;
   background-color: #3b404a;
   padding: 5px 0px 10px 0px;
-  margin: 0px;
+  margin: auto;
 }
-.bottom_footer div {
+.bottom_footer .logo_footer_div {
+  text-align: left;
+}
+.bottom_footer .logo_footer_div div {
   padding: 0px;
   display: inline-block;
-  text-align: right;
+  text-align: center;
 }
-.bottom_footer div .logo_footer {
+.bottom_footer .logo_footer_div div .logo_footer {
   margin-top: auto;
   height: 60px;
   width: auto;
 }
-.bottom_footer div span {
+.bottom_footer .logo_footer_div div span {
   margin-top: 90px;
   color: white;
   font-size: 12pt;

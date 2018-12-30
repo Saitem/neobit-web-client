@@ -14,15 +14,13 @@ body {
 .article-card-img-top {
   width: 320px;
   height: 180px;
+  border-radius: 0;
+
 }
 
 .article-card-body {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.article-card-img-top {
-  border-radius: 0;
 }
 
 .article-card-text {
