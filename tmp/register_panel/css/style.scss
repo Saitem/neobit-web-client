@@ -1,0 +1,88 @@
+$background: #313235;
+$neobit_green: #2ac467;
+
+
+body{
+  background-color: bisque;
+}
+.register_panel{
+  padding: 0px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00000057;
+}
+.register_top{
+  color: white;
+  padding: 0px;
+  border-radius: 10px 10px 0px 0px;
+  background-color: $background;
+  p{
+    padding: 3px;
+    margin: 0px;
+  }
+  h1{
+    font-weight: 400;
+    font-size: 30px;
+    padding: 0px;
+    margin: 0px;
+  }
+  .fa-lock{
+    margin-right: 3px;
+    color: $neobit_green;
+    font-size: 25px;
+  }
+}
+span{
+  display: inline-block;
+  padding-right: 0px;
+}
+.forms{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  font-weight: 600;
+  color: gray;
+}
+input{
+  background-color: #eeeeee;
+  border: 0px;
+  border-radius: 5px;
+  margin: 0px 0px 10px 0px;
+}
+button{
+  height: 40px;
+  background-color: $neobit_green;
+  border: 0px;
+  color: white;
+  font-weight: 600;
+}
+.register{
+  h2{
+    font-size: 16px;
+    font-weight: 400;
+  }
+  a{
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: underline;
+  }
+}
+.have_acc{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  border-radius: 0px 0px 10px 10px; 
+  background-color: $background;
+  a{
+  color: white;
+  font-size: 19px;
+  }
+  a:hover{
+    color: $neobit_green;
+    -ms-transition: all.6s ease;
+    -o-transition: all.6s ease;
+    -moz-transition: all.6s ease;
+    -webkit-transition: all.6s ease;
+    text-decoration: none;
+  }
+}

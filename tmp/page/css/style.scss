@@ -2,6 +2,7 @@
 
 $header_footer_back: #313235;
 $top_footer_back: rgb(95, 95, 95);
+$neobit_green: #2ac467;
 
 //optimization
 @media (min-width: 575.98px) and (max-width: 991.98px){
@@ -133,7 +134,7 @@ header {
     color: white;
   }
   a:hover {
-    color: #2ac467;
+    color: $neobit_green;
     text-decoration: none;
   }
   }
@@ -177,7 +178,7 @@ nav{
   font-size: 14.5pt;
   }
   a:hover {
-  color: #2ac467;
+  color: $neobit_green;
   }
 
   .side-navbar {
@@ -217,7 +218,7 @@ main {
     font-size: 19px;
   }
   a:hover{
-    color: #2AC467;
+    color: $neobit_green;
     text-decoration: underline;
   }
 }
@@ -261,7 +262,7 @@ main {
     font-size: 19px;
     color: white;
     .fa-clock{
-      color: #2AC467;
+      color: $neobit_green;
       font-size: 17px;
       margin-right: 2px; 
     }
@@ -322,7 +323,7 @@ footer{
       font-size: 15pt;  
     }
     a:hover{
-      color: #2ac467;
+      color: $neobit_green;
       text-decoration: none;
     }
     }
@@ -394,7 +395,7 @@ footer{
         color: #800080;
       }
       i:hover{
-      color: #2ac467;
+      color: $neobit_green;
       } 
       }
     }

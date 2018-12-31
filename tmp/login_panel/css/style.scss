@@ -1,0 +1,74 @@
+$background: #313235;
+$neobit_green: #2ac467;
+
+
+body{
+  background-color: bisque;
+}
+.login_panel{
+  padding: 0px;
+  box-shadow: 0 0 10px #00000057;
+  border-radius: 10px;
+  // position: absolute;
+  // top: 30%;
+  // justify-content: center;
+}
+.login_top{
+  color: white;
+  padding: 0px;
+  border-radius: 10px 10px 0px 0px;
+  background-color: $background;
+  p{
+    padding: 3px;
+    margin: 0px;
+  }
+  h1{
+    font-weight: 400;
+    font-size: 30px;
+    padding: 0px;
+    margin: 0px;
+  }
+  .fa-lock{
+    margin-right: 3px;
+    color: $neobit_green;
+    font-size: 25px;
+  }
+}
+.forms{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  font-weight: 600;
+  color: gray;
+}
+input{
+  background-color: #eeeeee;
+  border: 0px;
+  border-radius: 5px;
+  margin: 0px 0px 10px 0px;
+}
+button{
+  width: 80%;
+  background-color: $neobit_green;
+  border: 0px;
+  color: white;
+  font-weight: 600;
+}
+.footer{
+  background-color: $background;
+  padding: 7px 0px;
+  margin: 0px;
+  border-radius: 0px 0px 10px 10px; 
+  a, p{
+    color: white;
+    font-size: 19px;
+  }
+  a:hover{
+    color: $neobit_green;
+    -ms-transition: all.6s ease;
+    -o-transition: all.6s ease;
+    -moz-transition: all.6s ease;
+    -webkit-transition: all.6s ease;
+    text-decoration: none;
+  }
+}
