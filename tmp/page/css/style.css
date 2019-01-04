@@ -14,6 +14,11 @@
     text-align: center !important;
   }
 }
+@media (max-width: 769px) {
+  .card {
+    width: 55rem !important;
+  }
+}
 @media (max-width: 991.98px) {
   .social_footer {
     text-align: center !important;
@@ -28,6 +33,18 @@
   }
 }
 @media (min-width: 200px) and (max-width: 980px) {
+  .card {
+    width: 55rem !important;
+  }
+
+  .cards_div_in {
+    order: 12;
+  }
+
+  .right_cards {
+    order: 1;
+  }
+
   .links_header a, .links_header span {
     font-size: 22pt !important;
   }
@@ -51,8 +68,13 @@
     font-size: 19pt !important;
   }
 
-  .social_footer ul li a i {
+  .social_footer i {
     font-size: 45px !important;
+  }
+
+  .Made_with {
+    margin-top: 20px !important;
+    font-size: 37px !important;
   }
 }
 body, html {
@@ -80,6 +102,9 @@ header .header_container {
 header .img_div {
   display: inline-block;
   padding: 0px;
+}
+header .img_div img {
+  width: 80%;
 }
 header .img_div .logo_header {
   height: 90px;
@@ -111,9 +136,11 @@ nav {
 }
 nav .div_nav {
   margin: auto;
+  padding-left: 0px;
 }
 nav .nav_sites {
   text-align: left;
+  height: 100%;
 }
 nav .nav_sites a {
   display: inline-block;
@@ -125,6 +152,9 @@ nav .nav_sites a {
 }
 nav .side-navbar {
   text-align: right;
+}
+nav .side-navbar a i {
+  padding-left: 10px;
 }
 nav div {
   display: inline-block;
@@ -148,11 +178,12 @@ nav .side-navbar a {
 }
 
 main {
-  margin-top: 25px;
+  margin: 25px 0px 0px 0px !important;
 }
 
 .cards {
   margin: auto;
+  padding: 0px;
 }
 
 .card .fa-calendar-alt {
@@ -177,7 +208,7 @@ main {
   font-size: 19px;
 }
 .card-title a:hover {
-  color: #2AC467;
+  color: #2ac467;
   text-decoration: underline;
 }
 
@@ -215,6 +246,9 @@ main {
   box-shadow: 0 0 10px #00000057;
   padding: 0px;
 }
+.right_cards .right-card {
+  padding: 0px;
+}
 
 .title {
   border-radius: 10px 10px 0px 0px;
@@ -227,7 +261,7 @@ main {
   color: white;
 }
 .title .right_card_title .fa-clock {
-  color: #2AC467;
+  color: #2ac467;
   font-size: 17px;
   margin-right: 2px;
 }
@@ -297,21 +331,25 @@ footer .table_footer ul a:hover {
 .bottom_footer {
   width: 100%;
   background-color: #3b404a;
-  padding: 5px 0px 10px 0px;
   margin: auto;
 }
+.bottom_footer .info_footer {
+  padding: 20px 0px;
+}
 .bottom_footer .logo_footer_div {
-  text-align: left;
+  text-align: right;
+}
+.bottom_footer .logo_footer_div .Made_with .Git {
+  font-size: 15px;
+  font-weight: bold;
 }
 .bottom_footer .logo_footer_div div {
   padding: 0px;
   display: inline-block;
-  text-align: center;
+  text-align: left;
 }
-.bottom_footer .logo_footer_div div .logo_footer {
-  margin-top: auto;
-  height: 60px;
-  width: auto;
+.bottom_footer .logo_footer_div div img {
+  width: 35%;
 }
 .bottom_footer .logo_footer_div div span {
   margin-top: 90px;
@@ -321,10 +359,12 @@ footer .table_footer ul a:hover {
 .bottom_footer .social_footer {
   padding: 0px;
   display: inline-block;
-  text-align: right;
+  text-align: left;
   margin-top: auto;
 }
 .bottom_footer .social_footer ul {
+  padding-left: 5px;
+  margin-bottom: 0px;
   word-spacing: 10px;
   list-style: none;
 }

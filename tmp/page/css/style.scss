@@ -7,20 +7,28 @@ $neobit_green: #2ac467;
 //optimization
 @media (min-width: 575.98px) and (max-width: 991.98px){
   .links_header{
-      text-align: center !important
+      text-align: center !important;
   }
   
 }
 @media (min-width: 991.99px){
   .links_header{
-      text-align: right !important
+      text-align: right !important;
   }
 }
 @media(max-width: 991px){
   nav{
     div{
-      text-align: center !important
+      text-align: center !important;
     }
+  }
+}
+
+//main
+
+@media (max-width: 769px){
+  .card{
+    width: 55rem !important;
   }
 }
 
@@ -40,6 +48,15 @@ $neobit_green: #2ac467;
 //  ДЛЯ телефонов
 
 @media (min-width: 200px) and (max-width: 980px){
+  .card{
+    width: 55rem !important;
+  }
+  .cards_div_in{
+    order: 12;
+  }
+  .right_cards{
+    order: 1;
+  }
   .links_header{
     a, span{
       font-size: 22pt !important;
@@ -61,22 +78,19 @@ $neobit_green: #2ac467;
         font-size: 20pt !important; 
       }
     }
-    }
+  }
   .all_rul_suc{
     font-size: 19pt !important;
   }
   .social_footer{
-    ul{
-      li{
-        a{
-          i{
-            font-size: 45px !important;
-          }
-        }
-      }
+    i{
+      font-size: 45px !important;
     }
   }
-  
+  .Made_with{
+    margin-top: 20px !important;
+    font-size: 37px !important;    
+  }
 }
 
 body, html {
@@ -117,6 +131,9 @@ header {
   .img_div{
     display: inline-block;
     padding: 0px;
+    img{
+      width: 80%;
+    }
   .logo_header{
     height: 90px;
     width: auto !important; 
@@ -149,9 +166,11 @@ nav{
   box-shadow: 0 6px 20px -4px #868686;
   .div_nav{
     margin: auto;
+    padding-left: 0px;
   }
   .nav_sites{
     text-align: left;
+    height: 100%;
     a{
     display: inline-block;
     height: 100%;
@@ -163,6 +182,11 @@ nav{
   }
   .side-navbar{
     text-align: right;
+    a{
+      i{
+        padding-left: 10px;
+      }
+    }
   }
   div {
     display: inline-block;
@@ -191,11 +215,12 @@ nav{
 
 //main
 main {
-  margin-top: 25px; 
+  margin: 25px 0px 0px 0px !important;
 }
 //info-cards
 .cards{
   margin: auto;
+  padding: 0px;
 }
 .card{
   .fa-calendar-alt{
@@ -231,7 +256,7 @@ main {
   color: #6c757d;
   span{
     padding-left: 0px;
-  padding-right: 0px;
+    padding-right: 0px;
     margin: 0px;
   }
 }
@@ -252,6 +277,9 @@ main {
   border-radius: 10px 10px 10px 10px;
   box-shadow: 0 0 10px #00000057;
   padding: 0px;
+  .right-card{
+    padding: 0px;
+  }
 }
 .title{
   border-radius: 10px 10px 0px 0px;
@@ -334,33 +362,41 @@ footer{
 .bottom_footer {
   width: 100%;
   background-color: $header_footer_back;
-  padding: 5px 0px 10px 0px;
+  // padding: 5px 0px 10px 0px;
   margin: auto;
+  .info_footer{
+    padding: 20px 0px;
+  }
   .logo_footer_div{
-    text-align: left;
-  div{
-    padding: 0px;
-    display: inline-block;
-    text-align: center;
-    .logo_footer{
-      margin-top: auto;
-      height: 60px;
-      width: auto;
+    text-align: right;
+    .Made_with{
+      .Git{
+        font-size: 15px;
+        font-weight: bold;
       }
-    span{
-    margin-top: 90px; 
-    color: white;
-    font-size: 12pt;
     }
+    div{
+      padding: 0px;
+      display: inline-block;
+      text-align: left;
+      img{
+        width: 35%;
+      }
+      span{
+        margin-top: 90px; 
+        color: white;
+        font-size: 12pt;
+      }
     }
   }
-
   .social_footer {
     padding: 0px;
     display: inline-block;
-    text-align: right;
+    text-align: left;
     margin-top: auto;
     ul{
+      padding-left: 5px; 
+      margin-bottom: 0px;
       word-spacing: 10px;
       list-style: none;
       li{
@@ -401,6 +437,6 @@ footer{
     }
   }
 }
-a {
+// a {
   // font-family: 'Arial';
-}
+// }
