@@ -4,9 +4,13 @@
     text-align: center !important;
   }
 }
-@media (min-width: 991.99px) {
-  .links_header {
-    text-align: right !important;
+@media (min-width: 981px) {
+  .for_mobiles {
+    display: none;
+  }
+
+  .menu {
+    display: none;
   }
 }
 @media (max-width: 991px) {
@@ -33,6 +37,14 @@
   }
 }
 @media (min-width: 200px) and (max-width: 980px) {
+  .header_container {
+    display: none;
+  }
+
+  nav {
+    display: none;
+  }
+
   .card {
     width: 55rem !important;
   }
@@ -43,14 +55,6 @@
 
   .right_cards {
     order: 1;
-  }
-
-  .links_header a, .links_header span {
-    font-size: 22pt !important;
-  }
-
-  nav a {
-    font-size: 17pt !important;
   }
 
   .table_footer lh {
@@ -91,6 +95,45 @@ body {
   background-color: #f0f4f5;
 }
 
+.for_mobiles i {
+  color: white;
+  font-size: 75px;
+}
+.for_mobiles i:hover {
+  color: #2ac467;
+  -ms-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  -webkit-transition: all 0.6s ease;
+}
+.for_mobiles .img_mobile {
+  width: 60%;
+}
+.for_mobiles .drop_down_menu {
+  background-color: #3b404a;
+  border: none;
+}
+.for_mobiles .btn-danger:not(:disabled):not(.disabled).active, .for_mobiles .btn-danger:not(:disabled):not(.disabled):active, .for_mobiles .show > .btn-danger.dropdown-toggle {
+  background-color: #3b404a;
+  border: none;
+}
+.for_mobiles .dropdown-menu {
+  background-color: #3b404a;
+}
+
+.menu ul {
+  list-style: none;
+}
+.menu ul a {
+  font-weight: 400;
+  margin-left: 20px;
+  font-size: 22pt;
+  color: white;
+}
+.menu ul a i {
+  margin-right: 7px;
+}
+
 header {
   margin: auto;
   padding: 10px 0px 10px 0px;
@@ -114,6 +157,7 @@ header .img_div .logo_header {
   transform: scale(0.9, 0.9);
 }
 header .links_header {
+  text-align: right;
   display: inline-block;
 }
 header .links_header a, header .links_header span {
