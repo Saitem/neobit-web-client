@@ -51,6 +51,9 @@ $neobit_green: #2ac467;
 //  ДЛЯ телефонов
 
 @media (min-width: 200px) and (max-width: 980px){
+  .Mobile{
+    display: inline !important;
+  }
   .header_container{
     display: none;
   }
@@ -162,8 +165,9 @@ body {
     }
   }
 }
-
-
+.Mobile{
+  display: none;
+}
 header {
   margin: auto;
   padding: 10px 0px 10px 0px;
