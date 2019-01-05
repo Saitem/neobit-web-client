@@ -51,14 +51,17 @@ $neobit_green: #2ac467;
 //  ДЛЯ телефонов
 
 @media (min-width: 200px) and (max-width: 980px){
-  .Mobile{
-    display: inline !important;
+  .mobile{
+    display: block !important;
+  }
+  .pc{
+    display: none !important;
   }
   .header_container{
-    display: none;
+    display: none !important;
   }
   nav{
-    display: none;
+    display: none !important;
   }
   .card{
     width: 55rem !important;
@@ -165,12 +168,14 @@ body {
     }
   }
 }
-.Mobile{
+.mobile{
   display: none;
+}
+.pc{
+  display: block;
 }
 header {
   margin: auto;
-  padding: 10px 0px 10px 0px;
   background-color: $header_footer_back;
   .header_container{
     margin: auto !important;
