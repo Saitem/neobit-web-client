@@ -3,51 +3,8 @@
 $header_footer_back: #313235;
 $top_footer_back: rgb(95, 95, 95);
 $neobit_green: #2ac467;
+$top_footer_back: #373d44;
 
-//optimization
-@media (min-width: 575.98px) and (max-width: 991.98px){
-  .links_header{
-      text-align: center !important;
-  }
-  
-}
-@media (min-width: 981px){
-  .for_mobiles{
-    display: none;
-  }
-  .menu{
-    display: none;
-  }
-}
-@media(max-width: 991px){
-  nav{
-    div{
-      text-align: center !important;
-    }
-  }
-}
-
-//main
-
-@media (max-width: 769px){
-  .card{
-    width: 55rem !important;
-  }
-}
-
-@media(max-width: 991.98px){
-  .social_footer{
-    text-align: center !important;
-  }
-  .logo_footer_div{
-    text-align: center !important;
-  }
-  .table_footer{
-    ul{
-    text-align: center !important;
-    }
-  }
-}
 //  ДЛЯ телефонов
 
 @media (min-width: 200px) and (max-width: 980px){
@@ -63,15 +20,35 @@ $neobit_green: #2ac467;
   nav{
     display: none !important;
   }
+  // cards
   .card{
     width: 55rem !important;
   }
   .cards_div_in{
     order: 12;
+    .card-title-text{
+      font-size: 25px; //+6px
+    }
+    .card-data{
+      font-size: 30px;
+    }
+    .card-wievers{
+      font-size: 30px;
+    }
   }
   .right_cards{
     order: 1;
+    .right_card_title{
+      font-size: 25px !important;
+    }
+    .desc_name{
+      font-size: 23px !important;
+    }
+    .desc_other_name{
+      font-size: 21px !important;
+    }
   }
+  // cards
   .table_footer{  
       lh{
         text-align: center !important;
@@ -88,9 +65,13 @@ $neobit_green: #2ac467;
     font-size: 19pt !important;
   }
   .social_footer{
+    text-align: center !important;
     i{
       font-size: 45px !important;
     }
+  }
+  .logo_footer_div{
+    text-align: center !important;
   }
   .Made_with{
     margin-top: 20px !important;
@@ -108,17 +89,7 @@ a:hover {
   text-decoration: none;
 }
 
-$header_footer_back: #3b404a;
-$top_footer_back: #373d44;
-// @font-face {
-//   font-family: 'Segoe UI Regular';
-//   src: url('SegoeUI.eot');
-//   src: url('SegoeUI.eot?#iefix') format('embedded-opentype'),
-//   url('SegoeUI.woff') format('woff'),
-//   url('SegoeUI.ttf') format('truetype');
-//   font-weight: normal;
-//   font-style: normal;
-// }
+
 
 body {
   height: 100vh;
@@ -127,6 +98,8 @@ body {
 
 //Header
 .for_mobiles{
+  margin: 0px;
+  padding: 17px 0px;
   i{
     color: white;
     font-size: 75px;
@@ -139,7 +112,7 @@ body {
     -webkit-transition: all.6s ease;
   }
   .img_mobile{
-    width: 60%;
+    width: 45%;
   }
   .drop_down_menu{
     background-color: $header_footer_back;
@@ -172,6 +145,7 @@ body {
   display: none;
 }
 .pc{
+  padding: 17px 0px;
   display: block;
 }
 header {
@@ -257,7 +231,6 @@ nav{
   a:hover {
   color: $neobit_green;
   }
-
   .side-navbar {
     a {
       display: inline-block;
@@ -270,103 +243,103 @@ nav{
 main {
   margin: 25px 0px 0px 0px !important;
 }
-//info-cards
-.cards{
-  margin: auto;
-  padding: 0px;
-}
-.card{
-  .fa-calendar-alt{
-    margin-right: 7px;
-  }
-}
-.card{
-  box-shadow: 0 0 10px #00000057;
-  display: inline-block;
-  padding: 0px;
-  margin: 15px;
-  border: 0px;
-  width: 20rem;
-}
-.card-title{
-  background-color: white;
-  padding: 16px 20px 16px 20px;
-  a{
-    color: #212529;
-    font-size: 19px;
-  }
-  a:hover{
-    color: $neobit_green;
-    text-decoration: underline;
-  }
-}
-.card-footer{
-  text-align: center;
-  margin: auto;
-  padding-left: 0px;
-  padding-right: 0px;
-  background-color: rgba(0,0,0,.03);
-  color: #6c757d;
-  span{
-    padding-left: 0px;
-    padding-right: 0px;
-    margin: 0px;
-  }
-}
-.card-img{
-  width: 100%;
-  border-radius: 0px;
-}
-.card-data{
-  text-align: left;
-}
-.card-wievers{
-  text-align: right;
-}
-//right-new-cards
-.right_cards{
-  display: block;
-  height: 100%;
-  border-radius: 10px 10px 10px 10px;
-  box-shadow: 0 0 10px #00000057;
-  padding: 0px;
-  .right-card{
+  //info-cards
+  .cards{
+    margin: auto;
     padding: 0px;
   }
-}
-.title{
-  border-radius: 10px 10px 0px 0px;
-  padding: 11px 0px 11px 0px;
-  background-color: $header_footer_back;
-  text-align: center;
-  .right_card_title{
-    font-size: 19px;
-    color: white;
-    .fa-clock{
-      color: $neobit_green;
-      font-size: 17px;
-      margin-right: 2px; 
+  .card{
+    .fa-calendar-alt{
+      margin-right: 7px;
     }
   }
-}
-.description:last-child{
-  border-radius: 0px 0px 10px 10px;
-}
-.description{
-  margin: 0px;
-  padding: 5px 0px 5px 0px;
-  background-color: white;
-  .desc_name{
-    font-size: 17px;
+  .card{
+    box-shadow: 0 0 10px #00000057;
+    display: inline-block;
+    padding: 0px;
+    margin: 15px;
+    border: 0px;
+    width: 20rem;
   }
-  .desc_other_name{
-    color: grey;
-    font-size: 15px;
+  .card-title{
+    background-color: white;
+    padding: 16px 20px 16px 20px;
+    a{
+      color: #212529;
+      font-size: 19px;
+    }
+    a:hover{
+      color: $neobit_green;
+      text-decoration: underline;
+    }
   }
-}
-h1, h2{
-  margin: 0px;
-}
+  .card-footer{
+    text-align: center;
+    margin: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: rgba(0,0,0,.03);
+    color: #6c757d;
+    span{
+      padding-left: 0px;
+      padding-right: 0px;
+      margin: 0px;
+    }
+  }
+  .card-img{
+    width: 100%;
+    border-radius: 0px;
+  }
+  .card-data{
+    text-align: left;
+  }
+  .card-wievers{
+    text-align: right;
+  }
+  //right-new-cards
+  .right_cards{
+    display: block;
+    height: 100%;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 10px #00000057;
+    padding: 0px;
+    .right-card{
+      padding: 0px;
+    }
+  }
+  .title{
+    border-radius: 10px 10px 0px 0px;
+    padding: 11px 0px 11px 0px;
+    background-color: $header_footer_back;
+    text-align: center;
+    .right_card_title{
+      font-size: 19px;
+      color: white;
+      .fa-clock{
+        color: $neobit_green;
+        font-size: 17px;
+        margin-right: 2px; 
+      }
+    }
+  }
+  .description:last-child{
+    border-radius: 0px 0px 10px 10px;
+  }
+  .description{
+    margin: 0px;
+    padding: 5px 0px 5px 0px;
+    background-color: white;
+    .desc_name{
+      font-size: 17px;
+    }
+    .desc_other_name{
+      color: grey;
+      font-size: 15px;
+    }
+  }
+  h1, h2{
+    margin: 0px;
+  }
 
 
 //footer
@@ -488,6 +461,9 @@ footer{
       } 
       }
     }
+  }
+  .fa-code{
+    margin-right: 5px;
   }
 }
 // a {

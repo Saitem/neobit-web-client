@@ -1,52 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab|Russo+One|Ubuntu|Varela+Round");
-@media (min-width: 575.98px) and (max-width: 991.98px) {
-  .links_header {
-    text-align: center !important;
-  }
-}
-@media (min-width: 981px) {
-  .for_mobiles {
-    display: none;
-  }
-
-  .menu {
-    display: none;
-  }
-}
-@media (max-width: 991px) {
-  nav div {
-    text-align: center !important;
-  }
-}
-@media (max-width: 769px) {
-  .card {
-    width: 55rem !important;
-  }
-}
-@media (max-width: 991.98px) {
-  .social_footer {
-    text-align: center !important;
-  }
-
-  .logo_footer_div {
-    text-align: center !important;
-  }
-
-  .table_footer ul {
-    text-align: center !important;
-  }
-}
 @media (min-width: 200px) and (max-width: 980px) {
-  .Mobile {
-    display: inline !important;
+  .mobile {
+    display: block !important;
+  }
+
+  .pc {
+    display: none !important;
   }
 
   .header_container {
-    display: none;
+    display: none !important;
   }
 
   nav {
-    display: none;
+    display: none !important;
   }
 
   .card {
@@ -56,9 +23,27 @@
   .cards_div_in {
     order: 12;
   }
+  .cards_div_in .card-title-text {
+    font-size: 25px;
+  }
+  .cards_div_in .card-data {
+    font-size: 30px;
+  }
+  .cards_div_in .card-wievers {
+    font-size: 30px;
+  }
 
   .right_cards {
     order: 1;
+  }
+  .right_cards .right_card_title {
+    font-size: 25px !important;
+  }
+  .right_cards .desc_name {
+    font-size: 23px !important;
+  }
+  .right_cards .desc_other_name {
+    font-size: 21px !important;
   }
 
   .table_footer lh {
@@ -76,8 +61,15 @@
     font-size: 19pt !important;
   }
 
+  .social_footer {
+    text-align: center !important;
+  }
   .social_footer i {
     font-size: 45px !important;
+  }
+
+  .logo_footer_div {
+    text-align: center !important;
   }
 
   .Made_with {
@@ -99,6 +91,10 @@ body {
   background-color: #f0f4f5;
 }
 
+.for_mobiles {
+  margin: 0px;
+  padding: 17px 0px;
+}
 .for_mobiles i {
   color: white;
   font-size: 75px;
@@ -111,18 +107,18 @@ body {
   -webkit-transition: all 0.6s ease;
 }
 .for_mobiles .img_mobile {
-  width: 60%;
+  width: 45%;
 }
 .for_mobiles .drop_down_menu {
-  background-color: #3b404a;
+  background-color: #313235;
   border: none;
 }
 .for_mobiles .btn-danger:not(:disabled):not(.disabled).active, .for_mobiles .btn-danger:not(:disabled):not(.disabled):active, .for_mobiles .show > .btn-danger.dropdown-toggle {
-  background-color: #3b404a;
+  background-color: #313235;
   border: none;
 }
 .for_mobiles .dropdown-menu {
-  background-color: #3b404a;
+  background-color: #313235;
 }
 
 .menu ul {
@@ -138,14 +134,18 @@ body {
   margin-right: 7px;
 }
 
-.Mobile {
+.mobile {
   display: none;
+}
+
+.pc {
+  padding: 17px 0px;
+  display: block;
 }
 
 header {
   margin: auto;
-  padding: 10px 0px 10px 0px;
-  background-color: #3b404a;
+  background-color: #313235;
 }
 header .header_container {
   margin: auto !important;
@@ -305,7 +305,7 @@ main {
 .title {
   border-radius: 10px 10px 0px 0px;
   padding: 11px 0px 11px 0px;
-  background-color: #3b404a;
+  background-color: #313235;
   text-align: center;
 }
 .title .right_card_title {
@@ -382,7 +382,7 @@ footer .table_footer ul a:hover {
 
 .bottom_footer {
   width: 100%;
-  background-color: #3b404a;
+  background-color: #313235;
   margin: auto;
 }
 .bottom_footer .info_footer {
@@ -454,6 +454,9 @@ footer .table_footer ul a:hover {
 }
 .bottom_footer .social_footer ul li i:hover {
   color: #2ac467;
+}
+.bottom_footer .fa-code {
+  margin-right: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
