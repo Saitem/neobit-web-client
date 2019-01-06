@@ -87,7 +87,7 @@
       <div class="card">
         <img class="card-img" src="./img/news_cards/preview.jpg" alt="">
         <p class="card-title">
-           <a href="#" class="card-title-text">Какие бесплатные инструменты для оптимизации рабочего процесса используют</a>
+           <a href="#" class="card-title-text">Какие бесплатные инструменты для оптимизации рабочего процесса используютКакие бесплатные инструменты ля оптимизации рабочего процесса используютКакие бесплатные инструменты ля оптимизации рабочего процесса используютКакие бесплатные инструменты ля оптимизации рабочего процесса используютКакие бесплатные инструменты ля оптимизации рабочего процесса используютКакие бесплатные инструменты для оптимизации рабочего процесса используют</a>
           </p>
           <div class="card-footer row justify-content-center">
             <span class="col-5 card-data"><i class="fas fa-calendar-alt"></i>01.01.2019</span>
@@ -177,7 +177,7 @@
   </div> -->
 
 <!-- V2 -->
-<div class="bottom_footer container-fluid" align="center">
+<div class="bottom_footer container-fluid">
     <div class="container info_footer col-xl-10 row">
     <div class="social_footer col-xl-8 col-lg-7 col-md-12">
       <ul class="first_ul">
@@ -220,14 +220,19 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
     <script>
+      // alert('Ширина' +innerWidth) 
       const size = 70
+      const sizeForMobile = 130
       const elements = document.querySelectorAll('.card-title-text')
 
       elements.forEach(element => {
         const text = element.innerText
 
-        if (text.length > size) {
-          element.innerText = `${text.slice(0, size)}...`;
+        if (innerWidth < 985 && text.length > sizeForMobile){
+          element.innerText = `${text.slice(0, sizeForMobile)}...`
+        }
+        else if (text.length > size) {
+          element.innerText = `${text.slice(0, size)}...`
         }
       })
     </script>
