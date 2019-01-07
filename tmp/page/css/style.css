@@ -17,6 +17,7 @@
   }
 
   .card {
+    margin: 0 auto;
     width: 55rem !important;
   }
 
@@ -386,6 +387,7 @@ footer .table_footer ul a:hover {
   margin: auto;
 }
 .bottom_footer .info_footer {
+  margin: 0 auto;
   padding: 20px 0px;
 }
 .bottom_footer .logo_footer_div {
